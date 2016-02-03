@@ -4,7 +4,7 @@ namespace Shapes;
 
 include_once('ShapeInterface.php');
 
-class Circle implements ShapeInterface {
+class Sphere implements ShapeInterface {
 
 	protected $radius;
 
