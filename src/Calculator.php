@@ -12,7 +12,8 @@ class Calculator {
 	 */
 	public function surfaceArea(array $shapes)
 	{
-		return "undefined";
+		$totalSurfaceArea = $shape['cube', 'sphere', 'circle', 'square'];
+		return array_sum($totalSurfaceArea);
 	}
 
 	/**
@@ -23,7 +24,8 @@ class Calculator {
 	 */
 	public function totalVolume(array $shapes)
 	{
-		return "undefined";
+		$totalShapeVolume = $shape['cube', 'sphere'];
+		return array_sum($totalShapeVolume);
 	}
 
 }
