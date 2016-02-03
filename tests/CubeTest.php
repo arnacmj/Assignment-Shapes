@@ -1,6 +1,6 @@
 <?php
 
-use Shape/Cube;
+include_once('src/Cube.php');
 
 class CubeTest extends\PHPUnit_Framework_TestCase {
 
@@ -8,7 +8,7 @@ class CubeTest extends\PHPUnit_Framework_TestCase {
 	{	
 		$side = 20;
 		$result = 6 * sqrt($side);
-		$area_cube = new Cube($side);
+		$area_cube = new Shape/Cube($side);
 		
 		$this->assertEquals($result, $area_cube);
 		
@@ -18,7 +18,7 @@ class CubeTest extends\PHPUnit_Framework_TestCase {
 	{
 		$side = 10;
 		$result = sqrt($side) * $side;
-		$volume_cube = new Cube($side);
+		$volume_cube = new Shape/Cube($side);
 		
 		$this->assertEquals($result, $volume_cube);
 	}
